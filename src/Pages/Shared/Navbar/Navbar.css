@@ -1,0 +1,22 @@
+.nav-container{
+    box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 5%), -2px 0px 5px 1px rgb(0 0 0 / 5%);
+}
+
+.logo-2{
+    color: var(--primaryColor);
+}
+
+.signin-btn{
+    border: 2px solid var(--primaryColor);
+    background-color: var(--primaryColor);
+    transition: all 0.3s;
+}
+
+.signin-btn:hover{
+    background-color: #fff;
+    color: var(--primaryColor);
+}
+
+.nav-links a:hover{
+    color: var(--primaryColor);
+}

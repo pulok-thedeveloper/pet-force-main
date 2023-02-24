@@ -1,0 +1,4 @@
+.pricing-container{
+    background-image: url('../../../Assets/mission_bg.png');
+    background-color: var(--primaryColor);
+}

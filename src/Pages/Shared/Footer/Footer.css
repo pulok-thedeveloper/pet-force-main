@@ -1,0 +1,45 @@
+footer{
+    font-size: 90%;
+}
+
+.social-icons a{
+    background-color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
+    transition: all 0.3s;
+}
+
+.social-icons a:hover{
+    background-color: #fff;
+}
+
+.social-icons a:hover .social-icon{
+    color: var(--primaryColor);
+}
+
+.social-icon{
+    color: #fff;
+}
+
+.input-email{
+    outline: 0;
+    border: 1px solid #CCCCCC;
+}
+
+.input-email:focus{
+    border: 1px solid var(--primaryColor);
+}
+
+.subscribe-btn{
+    border: 2px solid var(--primaryColor);
+    background-color: var(--primaryColor);
+    transition: all 0.3s;
+}
+
+.subscribe-btn:hover{
+    background-color: #fff;
+    color: var(--primaryColor);
+}
+
+.address-icon{
+    color: var(--primaryColor);
+}

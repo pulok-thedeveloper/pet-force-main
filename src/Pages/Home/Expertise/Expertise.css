@@ -1,0 +1,19 @@
+.exp-card:hover .exp-icon{
+    background-color: var(--primaryColor);
+}
+
+.exp-icon{
+    width: 135px;
+    height: 135px;
+    padding: 2.2rem;
+    transition: all 0.3s;
+    box-shadow: 2px 2px 5px 1px rgb(0 0 0 / 5%), -2px 0px 5px 1px rgb(0 0 0 / 5%);
+}
+
+.exp-title:hover{
+    color: var(--primaryColor);
+}
+
+.exp-description{
+    color: #444444;
+}

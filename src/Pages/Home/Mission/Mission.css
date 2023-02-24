@@ -1,0 +1,32 @@
+.our-mission{
+    background-image: url('../../../Assets/mission_bg.png');
+    background-color: rgba(229, 165, 45, 0.85);
+}
+
+.mission-list li{
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.mission-list li::before{
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    left: 0;
+    top: 5px;
+}
+
+.mission-list li::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    left: 3px;
+    top: 8px;
+}
