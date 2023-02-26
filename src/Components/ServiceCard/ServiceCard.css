@@ -1,0 +1,14 @@
+.service-card{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.service-card:hover{
+    box-shadow: 5px 5px 20px 5px rgb(0 0 0 / 7%), -5px 0px 20px 5px rgb(0 0 0 / 7%);
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #fff;
+}
+
+.details-btn, .service-title:hover{
+    color: var(--primaryColor);
+}

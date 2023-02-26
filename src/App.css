@@ -21,6 +21,17 @@
   color: #444444;
 }
 
+.primary-btn{
+  border: 2px solid var(--primaryColor);
+  background-color: var(--primaryColor);
+  transition: all 0.3s;
+}
+
+.primary-btn:hover{
+  background-color: #fff;
+  color: var(--primaryColor);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
