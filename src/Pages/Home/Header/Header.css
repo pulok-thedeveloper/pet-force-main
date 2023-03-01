@@ -1,14 +1,14 @@
-.swiper-wrapper{
+.slider-wrapper{
     height: 100vh;
 }
 
-.swiper-slide{
+.slide{
     display: grid;
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../../../Assets/Header/girl-gb9f936f59_1920.jpg');
     background-size: cover;
 }
 
-.swiper-slide:nth-child(2){
+.slide:nth-child(2){
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../../../Assets/Header/kittens-g00461e1d5_1920.jpg');
     background-size: cover;
 }

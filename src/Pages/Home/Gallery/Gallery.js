@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Headericon from "../../../Assets/title-icon.png";
 import "./Gallery.css";
-
+import { FaEye } from "react-icons/fa";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 const Gallery = () => {
   const [gallery, setGallery] = useState();
 
@@ -11,7 +13,7 @@ const Gallery = () => {
       .then((data) => setGallery(data.data));
   }, []);
   return (
-    <div className="gallery-container min-h-screen grid justify-items-center py-16">
+    <div className="gallery-container min-h-screen grid justify-items-center p-16">
       <div className="mb-10">
         <div className="mb-3 grid justify-items-center">
           <img src={Headericon} alt="" />
@@ -23,11 +25,22 @@ const Gallery = () => {
           For professional dog and cat grooming needs
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-5">
-        {gallery?.map((image) => (
-          <img src={image?.img} key={image._id} alt="" />
-        ))}
-      </div>
+      <PhotoProvider>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
+          {gallery?.map((image) => (
+            <PhotoView src={image?.img}>
+              <div className="image-container relative" key={image._id}>
+                <img src={image?.img} alt="" />
+                <div className="overlay-box absolute h-full top-0 grid place-items-center">
+                  <span className="eye-icon rounded-full p-3">
+                    <FaEye />
+                  </span>
+                </div>
+              </div>
+            </PhotoView>
+          ))}
+        </div>
+      </PhotoProvider>
     </div>
   );
 };

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
+import useTitle from "../../Hook/useTitle";
 
 const AllServices = () => {
+  useTitle('Services');
+
   const [services, setServices] = useState();
 
   useEffect(() => {
@@ -13,7 +16,7 @@ const AllServices = () => {
   }, []);
 
   return (
-    <div className="all-services-container min-h-screen grid grid-cols-1 justify-center py-16">
+    <div className="all-services-container min-h-screen grid grid-cols-1 justify-center py-16 mt-20">
       <div className="mb-10">
         <h1 className="section-title font-semibold text-center">
           Our Services

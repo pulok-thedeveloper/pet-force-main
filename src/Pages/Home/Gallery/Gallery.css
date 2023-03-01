@@ -1,0 +1,24 @@
+.overlay-box{
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.5s;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+.eye-icon{
+    background-color: var(--primaryColor);
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.image-container:hover .overlay-box{
+    width: 100%;
+    opacity: 1;
+}
+
+.image-container:hover .eye-icon{
+    opacity: 1;
+}

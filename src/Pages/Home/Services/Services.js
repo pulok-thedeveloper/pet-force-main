@@ -26,7 +26,7 @@ const Services = () => {
           For professional dog and cat grooming needs
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-5 px-16">
+      <div className="grid md:grid-cols-2 gap-5 px-16">
         {services?.map((service) => (
           <ServiceCard
             key={service?._id}

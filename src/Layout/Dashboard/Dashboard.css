@@ -1,0 +1,21 @@
+.side-nav{
+    background-color: rgba(229, 165, 45, 0.2);
+    height: calc(100vh - 5rem);
+}
+
+.side-nav ul li {
+    transition: all 0.3s;
+}
+
+.side-nav ul li:hover {
+    background-color: rgba(229, 165, 45, 0.5);
+}
+
+.active-dash-nav{
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
+.active-dash-nav:hover{
+    background-color: var(--primaryColor);
+}

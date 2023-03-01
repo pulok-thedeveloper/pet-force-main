@@ -27,31 +27,31 @@ const Appointment = () => {
       <form>
         <div className="grid grid-cols-3 gap-x-20 gap-y-6 mb-10">
           <input
-            className="rounded-full outline-none px-6 py-3"
+            className="rounded-full col-span-3 sm:col-span-1 outline-none px-6 py-3"
             type="text"
             placeholder="Name"
           />
           <input
-            className="rounded-full outline-none px-6 py-3"
+            className="rounded-full col-span-3 sm:col-span-1 outline-none px-6 py-3"
             type="email"
             placeholder="Email"
           />
           <input
-            className="rounded-full outline-none px-6 py-3"
+            className="rounded-full col-span-3 sm:col-span-1 outline-none px-6 py-3"
             type="text"
             placeholder="Phone Number"
           />
           <input
-            className="rounded-full outline-none px-6 py-3"
+            className="rounded-full col-span-3 sm:col-span-1 outline-none px-6 py-3"
             type="text"
             placeholder="Date & Time"
           />
           <input
-            className="rounded-full outline-none px-6 py-3"
+            className="rounded-full col-span-3 sm:col-span-1 outline-none px-6 py-3"
             type="text"
             placeholder="Pet Category"
           />
-          <select className="rounded-full outline-none px-6 py-3">
+          <select className="rounded-full col-span-3 sm:col-span-1 outline-none px-6 py-3">
             <option disabled selected>
               Service Type
             </option>

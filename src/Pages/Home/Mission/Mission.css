@@ -3,13 +3,13 @@
     background-color: rgba(229, 165, 45, 0.85);
 }
 
-.mission-list li{
+.mission-list li, .about-list li{
     position: relative;
     padding-left: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
-.mission-list li::before{
+.mission-list li::before, .about-list li::before{
     position: absolute;
     content: '';
     width: 12px;
@@ -19,8 +19,12 @@
     left: 0;
     top: 5px;
 }
+.about-list li::before{
+    border: 1px solid var(--primaryColor);
 
-.mission-list li::after{
+}
+
+.mission-list li::after, .about-list li::after{
     position: absolute;
     content: '';
     width: 6px;
@@ -29,4 +33,9 @@
     border: 1px solid #fff;
     left: 3px;
     top: 8px;
+}
+
+.about-list li::after{
+    border: 1px solid var(--primaryColor);
+
 }

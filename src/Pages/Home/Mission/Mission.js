@@ -5,7 +5,7 @@ import signature from '../../../Assets/signature.png';
 
 const Mission = () => {
   return (
-    <div className="our-mission min-h-screen grid grid-cols-2 items-center gap-16 p-16 text-white">
+    <div className="our-mission min-h-screen grid sm:grid-cols-2 items-center gap-16 p-16 text-white">
       <div>
         <img src={misson_img} alt="" />
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import useTitle from '../../../Hook/useTitle';
 import Appointment from '../Appointment/Appointment';
 import Blogs from '../Blogs/Blogs';
 import Expertise from '../Expertise/Expertise';
@@ -10,6 +11,7 @@ import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
+    useTitle('Home');
     return (
         <div>
             <Header></Header>

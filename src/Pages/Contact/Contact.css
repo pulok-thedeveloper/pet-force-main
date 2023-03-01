@@ -1,0 +1,6 @@
+.contact-input{
+    transition: all 0.3s;
+}
+.contact-input:focus{
+    border-color: var(--primaryColor);
+}

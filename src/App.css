@@ -3,6 +3,31 @@
   --primaryColor: #E5A62D;
 }
 
+@media screen and (max-width: 1280px) {
+  html{
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html{
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html{
+    font-size: 50%;
+  }
+}
+
+
 .App {
   font-family: 'Open Sans', sans-serif;
   max-width: 1536px;
@@ -25,6 +50,18 @@
   border: 2px solid var(--primaryColor);
   background-color: var(--primaryColor);
   transition: all 0.3s;
+}
+
+.primary-color{
+  color: var(--primaryColor);
+}
+
+.input-focus{
+  border: 1px solid #C4C4C4;
+}
+
+.input-focus:focus{
+  border-color: var(--primaryColor);
 }
 
 .primary-btn:hover{

@@ -17,29 +17,29 @@ const Expertise = () => {
         <img src={Headericon} alt="" />
       </div>
       <h1 className="section-title font-semibold mb-3">
-        All Types of Grooming Services
+        All Grooming Services
       </h1>
       <p className="section-decription">
         For professional dog and cat grooming needs Fanatic clearly
       </p>
-      <div className="grid grid-cols-3 px-16 mt-10 gap-10 text-center">
+      <div className="grid sm:grid-cols-3 px-28 md:px-16 mt-10 gap-10 text-center">
         <div onMouseOver={()=>setActive(1)} onMouseOut={()=>setActive(0)} className="exp-card grid justify-items-center">
-            <div className="exp-icon rounded-full mb-10">
-                <img src={active===1? ex1_alt: ex1} alt=''/>
+            <div className="exp-icon rounded-full mb-10 grid place-items-center">
+                <img className="w-3/5 md:w-full" src={active===1? ex1_alt: ex1} alt=''/>
             </div>
             <h3 className="exp-title text-lg font-semibold mb-3 cursor-pointer">Experienced Staff</h3>
             <p className="exp-description leading-relaxed">Well gaudy hound hired set flailed much followed less this maternal well unavoidable crudely aloof more save groomed.</p>
         </div>
         <div onMouseOver={()=>setActive(2)} onMouseOut={()=>setActive(0)}  className="exp-card grid justify-items-center">
-            <div className="exp-icon rounded-full mb-10">
-                <img src={active===2? ex2_alt: ex2} alt=''/>
+            <div className="exp-icon rounded-full mb-10 grid place-items-center">
+                <img className="w-3/5 md:w-full" src={active===2? ex2_alt: ex2} alt=''/>
             </div>
             <h3 className="exp-title text-lg font-semibold mb-3 cursor-pointer">Top Class Facilities</h3>
             <p className="exp-description leading-relaxed">Well gaudy hound hired set flailed much followed less this maternal well unavoidable crudely aloof more save groomed.</p>
         </div>
         <div onMouseOver={()=>setActive(3)} onMouseOut={()=>setActive(0)}  className="exp-card grid justify-items-center">
-            <div className="exp-icon rounded-full mb-10">
-                <img src={active===3? ex3_alt: ex3} alt=''/>
+            <div className="exp-icon rounded-full mb-10 grid place-items-center">
+                <img className="w-3/5 md:w-full" src={active===3? ex3_alt: ex3} alt=''/>
             </div>
             <h3 className="exp-title text-lg font-semibold mb-3 cursor-pointer">Easy Consultaion</h3>
             <p className="exp-description leading-relaxed">Well gaudy hound hired set flailed much followed less this maternal well unavoidable crudely aloof more save groomed.</p>

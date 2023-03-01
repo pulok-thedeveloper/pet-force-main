@@ -2,3 +2,34 @@
     background-image: url('../../../Assets/mission_bg.png');
     background-color: var(--primaryColor);
 }
+
+.price-card-container{
+    box-shadow: 3px 2px 10px 1px rgb(0 0 0 / 5%), -3px 0px 10px 1px rgb(0 0 0 / 5%);
+}
+
+.feature-list{
+    min-height: 200px;
+    color: #707070;
+}
+
+@media (max-width: 640px) {
+    .feature-list{
+        min-height: 80px;
+    }
+}
+
+.price-title{
+    color: #707070;
+}
+
+.enq-btn{
+    border: 2px solid #222222;
+    color: #222222;
+    transition: all 0.3s;
+}
+
+.enq-btn:hover{
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    color: #fff;
+}

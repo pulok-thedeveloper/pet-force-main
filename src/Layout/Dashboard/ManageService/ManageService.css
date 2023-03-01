@@ -1,0 +1,11 @@
+.service-row {
+    box-shadow: 2px 2px 5px 5px rgb(0 0 0 / 5%);
+}
+
+.edit-btn{
+    background-color: rgba(0, 124, 247, 0.87);
+}
+
+.delete-btn{
+    background-color: #E73E33;
+}
