@@ -17,7 +17,7 @@ const UpdateModal = ({ closeModal, service }) => {
     const handleSubmit = event =>{
       event.preventDefault();
         // console.log(newService)
-        fetch(`http://localhost:5000/service/${service?._id}`,
+        fetch(`https://pet-force-server.vercel.app/service/${service?._id}`,
         {
             method: 'PUT',
             headers: {

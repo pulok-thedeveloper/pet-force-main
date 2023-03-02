@@ -8,12 +8,12 @@ const Gallery = () => {
   const [gallery, setGallery] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/gallery")
+    fetch("https://pet-force-server.vercel.app/gallery")
       .then((res) => res.json())
       .then((data) => setGallery(data.data));
   }, []);
   return (
-    <div className="gallery-container min-h-screen grid justify-items-center p-16">
+    <div className="gallery-container lg:min-h-screen grid justify-items-center p-16">
       <div className="mb-10">
         <div className="mb-3 grid justify-items-center">
           <img src={Headericon} alt="" />

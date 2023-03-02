@@ -9,7 +9,7 @@ const AllServices = () => {
   const [services, setServices] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://pet-force-server.vercel.app/services")
       .then((res) => res.json())
       .then((data) => setServices(data.data))
       .catch((error) => console.log(error.message));
@@ -26,7 +26,7 @@ const AllServices = () => {
           about your pets
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-5 px-16">
+      <div className="grid lg:grid-cols-2 gap-5 px-16">
         {services?.map((service) => (
             <ServiceCard
             key={service?._id}

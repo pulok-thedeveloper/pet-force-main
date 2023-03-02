@@ -15,13 +15,13 @@ const Testimonial = () => {
   const [reviews, setReviews] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://pet-force-server.vercel.app/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data.data))
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="testimonial-container min-h-screen grid justify-items-center px-16 pt-16 pb-8">
+    <div className="testimonial-container lg:min-h-screen grid justify-items-center px-16 pt-16 pb-8">
       <div className="mb-10">
         <div className="grid justify-items-center">
           <img src={Headericon} alt="" />

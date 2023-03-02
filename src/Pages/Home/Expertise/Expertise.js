@@ -12,7 +12,7 @@ const Expertise = () => {
     const [active, setActive] = useState(0);
 
   return (
-    <div className="grid justify-items-center py-16">
+    <div className="grid justify-items-center bg-white py-16">
       <div className="mb-5">
         <img src={Headericon} alt="" />
       </div>

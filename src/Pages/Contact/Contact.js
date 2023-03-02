@@ -3,10 +3,10 @@ import useTitle from "../../Hook/useTitle";
 import "./Contact.css";
 
 const Contact = () => {
-    useTitle('Contact');
+  useTitle("Contact");
 
   return (
-    <div className="min-h-screen mt-20 p-16 grid grid-cols-2 gap-20">
+    <div className=" mt-20 p-16 grid md:grid-cols-2 gap-20">
       <div className="">
         <div>
           <h1 className="section-title font-semibold mb-3 ">Get In Touch</h1>
@@ -31,7 +31,13 @@ const Contact = () => {
             className="contact-input border-b-2 py-3 outline-none"
             placeholder="Your Message"
           ></textarea>
-          <input className="py-2 px-5 primary-btn rounded-full text-white text-xl font-semibold" type="submit" value="Submit Now"/>
+          <div>
+            <input
+              className="py-2 px-5 primary-btn rounded-full text-white text-xl font-semibold"
+              type="submit"
+              value="Submit Now"
+            />
+          </div>
         </form>
       </div>
       <div className="grid items-center">
@@ -43,7 +49,7 @@ const Contact = () => {
               La city, IA 85796
             </p>
           </div>
-          <div  className="mb-8">
+          <div className="mb-8">
             <h3 className="font-semibold">Phone:</h3>
             <p>+(1) 234 567 8900</p>
           </div>

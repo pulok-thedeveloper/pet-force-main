@@ -15,7 +15,7 @@ const ManageService = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you want to delete this service");
     if (proceed) {
-      fetch(`http://localhost:5000/service/${id}`, { method: "DELETE" })
+      fetch(`https://pet-force-server.vercel.app/service/${id}`, { method: "DELETE" })
         .then((res) => res.json())
         .then((data) => {
           console.log(data.data);
@@ -29,7 +29,7 @@ const ManageService = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://pet-force-server.vercel.app/services")
       .then((res) => res.json())
       .then((data) => setServices(data.data))
       .catch((error) => console.log(error.message));

@@ -11,7 +11,7 @@ const MyReviewCard = ({ review, handleDelete }) => {
   const [modalReview, setModalReview] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${review?.serviceId}`)
+    fetch(`https://pet-force-server.vercel.app/service/${review?.serviceId}`)
       .then((res) => res.json())
       .then((data) => setService(data.data));
   }, [review?.serviceId]);

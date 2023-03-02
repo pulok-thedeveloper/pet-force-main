@@ -17,7 +17,7 @@ const ReviewModal = ({closeModal, review}) => {
     const handleSubmit = event =>{
         event.preventDefault();
           console.log(newReview)
-          fetch(`http://localhost:5000/review/${review?._id}`,
+          fetch(`https://pet-force-server.vercel.app/review/${review?._id}`,
           {
               method: 'PUT',
               headers: {

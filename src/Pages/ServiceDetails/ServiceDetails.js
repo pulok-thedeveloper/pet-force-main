@@ -17,13 +17,13 @@ const ServiceDetails = () => {
   const {user} = useContext(AuthContext);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${serviceId}`)
+    fetch(`https://pet-force-server.vercel.app/service/${serviceId}`)
       .then((res) => res.json())
       .then((data) => setService(data.data));
   }, [serviceId]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/review/${serviceId}`)
+    fetch(`https://pet-force-server.vercel.app/review/${serviceId}`)
       .then((res) => res.json())
       .then((data) => setReviews(data.data.reverse()));
   }, [serviceId, reviews]);
@@ -41,7 +41,7 @@ const ServiceDetails = () => {
         review: reviewMessage
     }
 
-    fetch('http://localhost:5000/reviews', {
+    fetch('https://pet-force-server.vercel.app/reviews', {
         method: 'POST',
         headers: {
             "content-type": 'application/json'
@@ -60,8 +60,8 @@ const ServiceDetails = () => {
 }
 
   return (
-    <div className="mt-20">
-      <div className="service-detail-container px-16 py-8 grid grid-cols-2 gap-12">
+    <div className="mt-24">
+      <div className="service-detail-container px-16 py-8 grid md:grid-cols-2 gap-12">
         <div className="">
           <img src={service?.image} alt="" />
         </div>

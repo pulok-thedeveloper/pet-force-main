@@ -5,7 +5,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="px-16">
+    <footer className="px-16 bg-white">
       <div className="py-16 grid lg:grid-cols-4 justify-center gap-10">
         <div>
           <div className="logo-container mb-5">

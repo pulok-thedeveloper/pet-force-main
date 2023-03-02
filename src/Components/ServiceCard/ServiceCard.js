@@ -10,7 +10,7 @@ const ServiceCard = ({service}) => {
     }
 
   return (
-    <div className="service-card p-10 grid grid-cols-6 gap-8 rounded">
+    <div className="service-card p-10 grid min-[450px]:grid-cols-6 gap-8 rounded">
       <div className="service-card-icon">
         <img alt="" src={service?.icon} />
       </div>

@@ -8,7 +8,7 @@ const MyReviews = () => {
   const [reviews, setreviews] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/reviews?email=${user?.email}`)
+    fetch(`https://pet-force-server.vercel.app/reviews?email=${user?.email}`)
       .then((res) => res.json())
       .then((data) => setreviews(data.data));
   }, [user?.email, reviews]);
@@ -17,7 +17,7 @@ const MyReviews = () => {
     console.log(id)
     const proceed = window.confirm("Are you want to delete this review");
     if (proceed) {
-      fetch(`http://localhost:5000/review/${id}`, { method: "DELETE" })
+      fetch(`https://pet-force-server.vercel.app/review/${id}`, { method: "DELETE" })
         .then((res) => res.json())
         .then((data) => {
           console.log(data.data);

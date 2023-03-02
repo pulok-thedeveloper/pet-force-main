@@ -40,7 +40,7 @@ const Signup = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen grid place-items-center">
-      <div className="signup-container w-2/3 h-min-4/5 grid grid-cols-2 rounded-lg">
+      <div className="signup-container w-9/12 md:w-4/5 h-min-4/5 grid md:grid-cols-2 rounded-lg">
         <div className="py-10 px-16">
           <h2 className="signup-title text-2xl font-bold mb-3">Signup</h2>
           <p className="text-gray-600 text-sm">Welcome to our community</p>
@@ -89,7 +89,7 @@ const Signup = () => {
             </Link>
           </p>
         </div>
-        <div className="signup-image rounded-lg"></div>
+        <div className="signup-image rounded-lg hidden md:block"></div>
       </div>
     </div>
   );

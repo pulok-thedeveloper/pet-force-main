@@ -21,7 +21,7 @@ const Header = () => {
         className="mySwiper slider-wrapper"
       >
         <div>
-          <SwiperSlide className="slide text-center sm:text-left sm:grid-cols-2 items-center">
+          <SwiperSlide className="slide text-center lg:text-left lg:grid-cols-2 items-center">
             <div className="grid gap-10 px-16">
               <h1 className="hero-title leading-tight">
                 We Give Special Care to Your{" "}
@@ -41,7 +41,7 @@ const Header = () => {
           </SwiperSlide>
         </div>
 
-        <SwiperSlide className="slide text-center sm:text-left sm:grid-cols-2 items-center">
+        <SwiperSlide className="slide text-center lg:text-left lg:grid-cols-2 items-center">
           <div className="grid gap-10 px-16">
             <h1 className="text-6xl leading-tight">
               <span className="highlight font-semibold">Highest Quality</span>{" "}

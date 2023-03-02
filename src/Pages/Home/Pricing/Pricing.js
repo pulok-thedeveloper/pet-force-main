@@ -17,7 +17,7 @@ const Pricing = () => {
           For professional dog and cat grooming needs
         </p>
       </div>
-      <div className="price-card-container bg-white p-20 grid sm:grid-cols-3 gap-20">
+      <div className="price-card-container bg-white p-20 grid md:grid-cols-3 gap-20">
         <div>
           <h3 className="price-title text-2xl border-b font-extralight pb-3">
             Basic

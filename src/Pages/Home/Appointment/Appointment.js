@@ -6,13 +6,13 @@ const Appointment = () => {
   const [services, setServices] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://pet-force-server.vercel.app/services")
       .then((res) => res.json())
       .then((data) => setServices(data.data))
       .catch((error) => console.log(error.message));
   }, []);
   return (
-    <div className="appointment-container min-h-screen p-16">
+    <div className="appointment-container lg:min-h-screen p-16">
       <div className="mb-10">
         <div className="mb-3 grid justify-center">
           <img src={Headericon} alt="" />
@@ -25,7 +25,7 @@ const Appointment = () => {
         </p>
       </div>
       <form>
-        <div className="grid grid-cols-3 gap-x-20 gap-y-6 mb-10">
+        <div className="grid grid-cols-3 gap-10 lg:gap-x-20 gap-y-6 mb-10">
           <input
             className="rounded-full col-span-3 sm:col-span-1 outline-none px-6 py-3"
             type="text"

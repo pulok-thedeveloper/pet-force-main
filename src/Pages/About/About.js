@@ -6,7 +6,7 @@ const About = () => {
     useTitle('About');
 
   return (
-    <div className="min-h-screen grid grid-cols-2 items-center gap-16 mt-20 px-16 py-10">
+    <div className=" grid md:grid-cols-2 items-center gap-16 mt-20 px-16 py-10">
       <div>
         <img
           src="http://www.shmai.com/preview/pawrex-html/images/resource/welcome.jpg"

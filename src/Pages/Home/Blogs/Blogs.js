@@ -14,14 +14,14 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch("https://pet-force-server.vercel.app/blogs")
       .then((res) => res.json())
       .then((data) => setBlogs(data.data))
       .catch((err) => console.log(err.message));
   }, []);
 
   return (
-    <div className="blogs-container min-h-screen grid justify-items-center px-16 pt-16 pb-8">
+    <div className="blogs-container bg-white lg:min-h-screen grid justify-items-center px-16 pt-16 pb-8">
       <div className="mb-10">
         <div className="grid justify-items-center">
           <img src={Headericon} alt="" />
@@ -38,11 +38,11 @@ const Blogs = () => {
           slidesPerView={3}
           spaceBetween={30}
           breakpoints={{
-            "@0.75": {
+            "@0.0": {
               slidesPerView: 1,
               spaceBetween: 20,
             },
-            "@1.50": {
+            "@1.00": {
               slidesPerView: 2,
               spaceBetween: 30,
             },

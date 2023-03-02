@@ -41,7 +41,7 @@ const Login = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen grid place-items-center">
-      <div className="login-container w-2/3 h-min-4/5 grid grid-cols-2 rounded-lg">
+      <div className="login-container w-9/12 md:4/5 h-min-4/5 grid md:grid-cols-2 rounded-lg">
         <div className="py-10 px-16">
           <h2 className="login-title text-2xl font-bold mb-3">Login</h2>
           <p className="text-gray-600 text-sm">Welcome again</p>
@@ -81,7 +81,7 @@ const Login = () => {
             </Link>
           </p>
         </div>
-        <div className="signup-image rounded-lg"></div>
+        <div className="signup-image rounded-lg hidden md:block"></div>
       </div>
     </div>
   );
